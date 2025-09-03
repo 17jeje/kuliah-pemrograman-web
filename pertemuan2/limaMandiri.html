@@ -1,0 +1,44 @@
+<head>
+  <style>
+    body{
+        background-color: rgb(231, 124, 142);
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 15px;
+      width: 400px;
+      text-align: center;
+    }
+    td {
+      border: 1px solid black;
+      border-spacing: 15px;
+      padding: 20px;
+      background-color: aliceblue;
+    }
+    .rowspan {
+      background: purple;
+      color: white;
+    }
+    .colspan {
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td></td>
+      <td class="colspan" colspan="2">colspan = "2"</td>
+    </tr>
+    <tr>
+      <td class="rowspan" rowspan="2">rowspan = "2"</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>

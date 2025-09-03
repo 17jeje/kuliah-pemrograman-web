@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Registrasi Account TCPNS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+    }
+
+    .form-container {
+      width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .form-container h1 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #003366;
+    }
+
+    .form-container p {
+      font-size: 12px;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    table {
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    td {
+      padding: 6px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid #99c;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    select {
+      width: auto;
+    }
+
+    .buttonsubmit {
+      margin-top: 15px;
+      padding: 6px 20px;
+      border: 1px solid #3366cc;
+      background: #4d79ff;
+      color: white;
+      font-size: 14px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .buttonsubmit:hover {
+      background: #3355cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Form Registrasi Account TCPNS</h1>
+    <p>Silahkan isi form di bawah ini dengan baik dan benar.</p>
+    <form>
+      <table>
+        <tr>
+          <td>Nama:</td>
+          <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin:</td>
+          <td>
+            <select name="gender" required>
+              <option value="">Pilih Jenis Kelamin</option>
+              <option value="laki-laki">Laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Tanggal Lahir:</td>
+          <td>
+            <select name="tgl">
+              <option>Tgl:</option>
+              <script>
+                for (let i = 1; i <= 31; i++) {
+                  document.write("<option>"+i+"</option>");
+                }
+              </script>
+            </select>
+            <select name="bulan">
+              <option>Bulan:</option>
+              <option>Januari</option>
+              <option>Februari</option>
+              <option>Maret</option>
+              <option>April</option>
+              <option>Mei</option>
+              <option>Juni</option>
+              <option>Juli</option>
+              <option>Agustus</option>
+              <option>September</option>
+              <option>Oktober</option>
+              <option>November</option>
+              <option>Desember</option>
+            </select>
+            <select name="tahun">
+              <option>Tahun:</option>
+              <script>
+                for (let i = 2025; i >= 1950; i--) {
+                  document.write("<option>"+i+"</option>");
+                }
+              </script>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Kirim" class="buttonsubmit">
+    </form>
+  </div>
+</body>
+</html>
