@@ -1,10 +1,10 @@
 # percobaan 1
-<img src = "image\p1.png">
+<img src = "image/p1.png">
 
 pada percobaan ini terdapat tag 'script untuk pemanggilan fungsi JavaScript yang terdapat pada bagian kepala dan body dengan document.write("...") untuk mencetak teks.
 
 # percobaan 2
-<img src = "image\p2.png">
+<img src = "image/p2.png">
 terdapat event onclick yang akan menampilkan nama dengan bantuan fungsi tampilkan_nama() dalam script untuk ditambahkan ke elemen <div> yang memiliki id="hasil".
 
 # percobaan 3
