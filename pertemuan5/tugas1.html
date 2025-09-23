@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konversi Bilangan</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .result-box {
+      background: #ffffff;
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin: 10px 0;
+      font-size: 16px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .result-box span {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Konversi Bilangan</h1>
+
+  <script language="JavaScript">
+    var a = parseInt("12");
+    document.write('<div class="result-box">1. <span>' + a + '</span></div>');
+
+    a = parseInt("34.5");
+    document.write('<div class="result-box">2. <span>' + a + '</span></div>');
+
+    var a = parseInt("67J");
+    document.write('<div class="result-box">3. <span>' + a + '</span></div>');
+
+    a = parseInt("E89");
+    document.write('<div class="result-box">4. <span>' + a + '</span></div>');
+
+    var b = parseFloat("10");
+    document.write('<div class="result-box">5. <span>' + b + '</span></div>');
+
+    b = parseFloat("12.3");
+    document.write('<div class="result-box">6. <span>' + b + '</span></div>');
+
+    var b = parseFloat("45S");
+    document.write('<div class="result-box">7. <span>' + b + '</span></div>');
+
+    b = parseFloat("L67.8");
+    document.write('<div class="result-box">8. <span>' + b + '</span></div>');
+  </script>
+</body>
+</html>

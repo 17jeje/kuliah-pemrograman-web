@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array JavaScript dengan Tabel</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .result-box {
+      background: #ffffff;
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin: 10px 0;
+      font-size: 16px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .result-box span {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    /* Styling tabel */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #3498db;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      padding: 8px;
+      text-align: center;
+    }
+
+    td {
+      padding: 8px;
+      text-align: center;
+      background: #fff;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #ecf9ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Belajar Array di JavaScript</h1>
+
+  <script>
+    var data = [123, "Belajar JS", true, 45.6];
+
+    document.write('<div class="result-box">Isi array: <span>' + data + '</span></div>');
+
+    document.write('<div class="result-box">Elemen ke-2: <span>' + data[1] + '</span></div>');
+
+    data.push("Data baru");
+    document.write('<div class="result-box">Isi array setelah ditambah: <span>' + data + '</span></div>');
+
+    document.write('<div class="result-box">Looping isi array dalam tabel:<br>');
+    document.write('<table>');
+    document.write('<tr><th>Index</th><th>Nilai</th></tr>');
+
+    for (var i = 0; i < data.length; i++) {
+      document.write('<tr><td>' + i + '</td><td>' + data[i] + '</td></tr>');
+    }
+
+    document.write('</table></div>');
+  </script>
+</body>
+</html>
