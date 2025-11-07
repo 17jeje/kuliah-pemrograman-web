@@ -11,5 +11,5 @@ Route::get('/layanan', function () {
 });
 
 Route::get('/tentang', function () {
-    return view('tentang');
+    return "INI DARI LARAVEL ✅";
 });
